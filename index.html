@@ -152,6 +152,383 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/BGP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kay_wu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kay_wu Note">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/BGP/" class="post-title-link" itemprop="url">BGP</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2023-07-26 17:41:05 / 修改時間：17:41:33" itemprop="dateCreated datePublished" datetime="2023-07-26T17:41:05+08:00">2023-07-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="BGP-Border-Gateway-Protocol"><a href="#BGP-Border-Gateway-Protocol" class="headerlink" title="BGP ( Border Gateway Protocol )"></a>BGP ( Border Gateway Protocol )</h1><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><h5 id="BGP-為-Border-Gateway-Protocol-的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。-BGP-通常建構於大型的網路結構中，用於交換不同的-AS-Autonomous-System-之間的路由資訊，例如-ISP-與-ISP-之間的路由交換。-BGP-的複雜性在於建立-Peers-的規則與許多可影響路由結果的-Attribute-，而調整或是設定這些-Attribute-是學習-BGP-必備的。"><a href="#BGP-為-Border-Gateway-Protocol-的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。-BGP-通常建構於大型的網路結構中，用於交換不同的-AS-Autonomous-System-之間的路由資訊，例如-ISP-與-ISP-之間的路由交換。-BGP-的複雜性在於建立-Peers-的規則與許多可影響路由結果的-Attribute-，而調整或是設定這些-Attribute-是學習-BGP-必備的。" class="headerlink" title="BGP 為 Border Gateway Protocol 的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。 BGP 通常建構於大型的網路結構中，用於交換不同的 AS ( Autonomous System ) 之間的路由資訊，例如 ISP 與 ISP 之間的路由交換。 BGP 的複雜性在於建立 Peers 的規則與許多可影響路由結果的 Attribute ，而調整或是設定這些 Attribute 是學習 BGP 必備的。"></a>BGP 為 Border Gateway Protocol 的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。 BGP 通常建構於大型的網路結構中，用於交換不同的 AS ( Autonomous System ) 之間的路由資訊，例如 ISP 與 ISP 之間的路由交換。 BGP 的複雜性在於建立 Peers 的規則與許多可影響路由結果的 Attribute ，而調整或是設定這些 Attribute 是學習 BGP 必備的。</h5><h4 id="EBGP-External-BGP-與-IBGP-Internal-BGP"><a href="#EBGP-External-BGP-與-IBGP-Internal-BGP" class="headerlink" title="EBGP ( External BGP )  與 IBGP ( Internal BGP )"></a>EBGP ( External BGP )  與 IBGP ( Internal BGP )</h4><h5 id="Routing-Protocol-大多從組成-Neighbors開始，在-BGP-中則稱為-Peers。Peers-使用-TCP-179-port溝通，而Peers-又分為-Internal-BGP-與-External-BGP-。"><a href="#Routing-Protocol-大多從組成-Neighbors開始，在-BGP-中則稱為-Peers。Peers-使用-TCP-179-port溝通，而Peers-又分為-Internal-BGP-與-External-BGP-。" class="headerlink" title="Routing Protocol 大多從組成 Neighbors開始，在 BGP 中則稱為 Peers。Peers 使用 TCP 179 port溝通，而Peers 又分為 Internal BGP 與 External BGP 。"></a>Routing Protocol 大多從組成 Neighbors開始，在 BGP 中則稱為 Peers。Peers 使用 TCP 179 port溝通，而Peers 又分為 Internal BGP 與 External BGP 。</h5><h5 id="如果兩個-Router-位於相同的-AS-中組成-Peers，即為-IBGP-，反之若是位於不同的-AS-中組成-Peers，則為-EBGP，下圖為-IBGP-以及-EBGP-的範例。"><a href="#如果兩個-Router-位於相同的-AS-中組成-Peers，即為-IBGP-，反之若是位於不同的-AS-中組成-Peers，則為-EBGP，下圖為-IBGP-以及-EBGP-的範例。" class="headerlink" title="如果兩個 Router 位於相同的 AS 中組成 Peers，即為 IBGP ，反之若是位於不同的 AS 中組成 Peers，則為 EBGP，下圖為 IBGP 以及 EBGP 的範例。"></a>如果兩個 Router 位於相同的 AS 中組成 Peers，即為 IBGP ，反之若是位於不同的 AS 中組成 Peers，則為 EBGP，下圖為 IBGP 以及 EBGP 的範例。</h5>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/html-css-04/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kay_wu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kay_wu Note">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/html-css-04/" class="post-title-link" itemprop="url">html-css-04</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2023-07-26 17:39:31 / 修改時間：17:40:10" itemprop="dateCreated datePublished" datetime="2023-07-26T17:39:31+08:00">2023-07-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="img-Element"><a href="#img-Element" class="headerlink" title="img Element"></a>img Element</h1><hr>
+<p>在 HTML 內加入圖片，可使用下列語法，<code>src</code>內填入圖片之相對路徑或絕對路徑</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span> = <span class="string">&quot;IMG_PATH&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在其中加入<code>alt</code>屬性，用於當網速太慢、圖片出錯或是瀏覽器禁用圖片，導致圖片失效的時候，<code>alt</code>內容可作為圖片的替代文字進行補救。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span> = <span class="string">&quot;IMG_PATH&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;IMG替代文字&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在<code>img</code>標籤中加入<code>width</code>或<code>height</code>屬性可以調整圖片的寬與高</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span> = <span class="string">&quot;IMG_PATH&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;IMG替代文字&quot;</span>/ <span class="attr">width</span>=<span class="string">&quot;500&quot;</span> <span class="attr">height</span>=<span class="string">&quot;500&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="a-Element"><a href="#a-Element" class="headerlink" title="a Element"></a>a Element</h1><hr>
+<p>標籤<code>a</code>用於超連結，<code>href</code>內填入超連結的網址，若填入#會刷新該頁面，並回到該頁面的最上端</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;address&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在其中加入<code>target</code>屬性</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;address&quot;</span> <span class="attr">targe</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/html-css-03/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kay_wu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kay_wu Note">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/html-css-03/" class="post-title-link" itemprop="url">html-css-03</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2023-07-26 17:39:28 / 修改時間：17:39:58" itemprop="dateCreated datePublished" datetime="2023-07-26T17:39:28+08:00">2023-07-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>架設網站之前需要先構思網站的設計、排版，通常都需要參考大量的資料，或者擁有天馬行空的想像，但有時候就是靈感枯竭，這時候可以先藉由素材去延伸思考自己的網頁內容如何安排，而大多的素材都是擁有著作權的，若直接使用會衍生後續其他問題，這邊推薦一些設計師以及我會去瀏覽、誘發靈感以及找尋素材的網站</p>
+<p>『放置一張跟點子相關的圖片』</p>
+<h2 id="公眾領域貢獻宣告-CC0-（-Creative-Commons-Zero）"><a href="#公眾領域貢獻宣告-CC0-（-Creative-Commons-Zero）" class="headerlink" title="公眾領域貢獻宣告 - CC0 （ Creative Commons Zero）"></a>公眾領域貢獻宣告 - CC0 （ Creative Commons Zero）</h2><p>可使科學家、教育工作者、藝術家、其他創作者及著作權人，或內容受資料庫保護的權利人等拋棄他們對各自著作的利益，並盡可能將這些著作釋出到公眾領域，讓其他人可以任何目的自由地以該著作為基礎，從事創作、提升或再使用等行為，而不受著作權或是資料庫相關法律的限制。</p>
+<h2 id="圖庫"><a href="#圖庫" class="headerlink" title="圖庫"></a>圖庫</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://pixabay.com"title"/">Pixabay</a></li>
+</ul>
+<p><img src="https://i.imgur.com/Svr4usc.jpg" alt="image-20221218094249413"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://unsplash.com/" title="Title">Unplash</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.pexels.com/zh-tw/" title="Title">Pexels</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.foodiesfeed.com/" title="Title">foodiesfeed</a></li>
+<li><a target="_blank" rel="noopener" href="https://burst.shopify.com/" title="Title">burst</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.stockvault.net/" title="Title">stockvault</a></li>
+<li><a target="_blank" rel="noopener" href="https://picjumbo.com/" title="Titile">picjumbo</a></li>
+</ul>
+<h2 id="素材"><a href="#素材" class="headerlink" title="素材"></a>素材</h2><h3 id="參考資料："><a href="#參考資料：" class="headerlink" title="參考資料："></a>參考資料：</h3><ol>
+<li><a target="_blank" rel="noopener" href="http://creativecommons.tw/cc0" title="Title"> 「公眾領域貢獻宣告」（CC0） - 台灣創用CC計畫 </a></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/html-css-02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kay_wu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kay_wu Note">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/html-css-02/" class="post-title-link" itemprop="url">html-css-02</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2023-07-26 17:39:25 / 修改時間：17:39:49" itemprop="dateCreated datePublished" datetime="2023-07-26T17:39:25+08:00">2023-07-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="元素介紹"><a href="#元素介紹" class="headerlink" title="元素介紹"></a>元素介紹</h2><h3 id="標題元素-heading"><a href="#標題元素-heading" class="headerlink" title="標題元素 - heading   &lt;h1&gt; ~ &lt;h6&gt;"></a>標題元素 - heading   <code>&lt;h1&gt; ~ &lt;h6&gt;</code></h3><ul>
+<li><em><strong>HTML</strong></em> 擁有不同的標題大小設置分別為 <code>&lt;h1&gt;</code> ～ <code>&lt;h6&gt;</code>，數字越小的標題顯示後越大，以下為顯示之範例：</li>
+</ul>
+<h1>這是h1</h1>
+
+<h2>這是h2</h2>
+
+<h3>這是h3</h3>
+
+<h4>這是h4</h4>
+
+<h5>這是h5</h5>
+
+<h6>這是h6</h6>
+
+<h3 id="段落元素-paragraph"><a href="#段落元素-paragraph" class="headerlink" title="段落元素 - paragraph &lt;p&gt;"></a>段落元素 - paragraph <code>&lt;p&gt;</code></h3><p>第一段在這裡</p>
+
+<p>第二段在這裡</p>
+
+<h3 id="清單元素-Unordered-List-Ordered-List"><a href="#清單元素-Unordered-List-Ordered-List" class="headerlink" title="清單元素 - Unordered List &lt;ul&gt;  Ordered List &lt;ol&gt;"></a>清單元素 - Unordered List <code>&lt;ul&gt;</code>  Ordered List <code>&lt;ol&gt;</code></h3><ul>
+<li>清單元素內會包裹<code>&lt;li&gt;</code>分別列出每一項，其結構如下：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">	&lt;li&gt;第一項&lt;/li&gt;</span><br><span class="line">	.</span><br><span class="line">	.</span><br><span class="line">	&lt;li&gt;第n項&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="斜體-italic-注重-emphasize"><a href="#斜體-italic-注重-emphasize" class="headerlink" title="斜體 - italic &lt;i&gt; 注重 - emphasize &lt;em&gt;"></a>斜體 - italic <code>&lt;i&gt;</code> 注重 - emphasize <code>&lt;em&gt;</code></h3><p><i> i 斜體</i>   </p>
+<p><em>em 斜體</em></p>
+<h3 id="粗體-bring-Attention-To-strong"><a href="#粗體-bring-Attention-To-strong" class="headerlink" title="粗體 - bring Attention To &lt;b&gt; strong &lt;strong&gt;"></a>粗體 - bring Attention To <code>&lt;b&gt;</code> strong <code>&lt;strong&gt;</code></h3><p><b>b 粗體 </b></p>
+<p><strong>strong 粗體</strong></p>
+<h3 id="斷行"><a href="#斷行" class="headerlink" title="斷行 - &lt;br&gt;"></a>斷行 - <code>&lt;br&gt;</code></h3><h3 id="水平線"><a href="#水平線" class="headerlink" title="水平線 - &lt;hr&gt;"></a>水平線 - <code>&lt;hr&gt;</code></h3><hr>
+<h3 id="超連結-anchor"><a href="#超連結-anchor" class="headerlink" title="超連結 - anchor &lt;a&gt;"></a>超連結 - anchor <code>&lt;a&gt;</code></h3><p><a>超連結</a></p>
+<h3 id="建立一網頁用於排版練習"><a href="#建立一網頁用於排版練習" class="headerlink" title="建立一網頁用於排版練習"></a>建立一網頁用於排版練習</h3><ul>
+<li>上述以及之前所提及之元素建立一網頁</li>
+</ul>
+<h3 id="參考資料："><a href="#參考資料：" class="headerlink" title="參考資料："></a>參考資料：</h3><ol>
+<li>[ HTML 元素- HTML：超文本標記語言 - MDN Web Docs ](</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/html-css-01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kay_wu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kay_wu Note">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/html-css-01/" class="post-title-link" itemprop="url">html-css-01</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2023-07-26 17:39:06 / 修改時間：17:39:22" itemprop="dateCreated datePublished" datetime="2023-07-26T17:39:06+08:00">2023-07-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="什麼是-HTML"><a href="#什麼是-HTML" class="headerlink" title="什麼是 HTML"></a>什麼是 HTML</h2><ul>
+<li><em><strong>HTML</strong></em>（ <em><strong>Hyper Text Markup Language</strong></em> ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 <em><strong>html</strong></em> 程式呈現為網站。</li>
+<li></li>
+</ul>
+<h2 id="你的第一個網頁"><a href="#你的第一個網頁" class="headerlink" title="你的第一個網頁"></a>你的第一個網頁</h2><ul>
+<li><p>已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 <em><strong>html</strong></em> 程式撰寫，第一支程式不外乎都是從最經典的 <code>Hello World</code> 開始：</p>
+<ol>
+<li>於桌面新增一專案資料夾並以 <em><strong>VS Code</strong></em> 開啟</li>
+<li>在資料節內新增一檔案為 <em><strong>index.html</strong></em> 之檔案，記住副檔名須為 <em><strong>.html</strong></em>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/html-css-01/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://example.com/html-css-00/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -352,7 +729,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
