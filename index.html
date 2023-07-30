@@ -175,10 +175,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2023-07-26 17:41:05 / 修改時間：17:41:33" itemprop="dateCreated datePublished" datetime="2023-07-26T17:41:05+08:00">2023-07-26</time>
+              <time title="創建時間：2023-07-26 17:41:05" itemprop="dateCreated datePublished" datetime="2023-07-26T17:41:05+08:00">2023-07-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-07-30 15:37:06" itemprop="dateModified" datetime="2023-07-30T15:37:06+08:00">2023-07-30</time>
+              </span>
 
           
 
@@ -191,7 +197,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="BGP-Border-Gateway-Protocol"><a href="#BGP-Border-Gateway-Protocol" class="headerlink" title="BGP ( Border Gateway Protocol )"></a>BGP ( Border Gateway Protocol )</h1><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><h5 id="BGP-為-Border-Gateway-Protocol-的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。-BGP-通常建構於大型的網路結構中，用於交換不同的-AS-Autonomous-System-之間的路由資訊，例如-ISP-與-ISP-之間的路由交換。-BGP-的複雜性在於建立-Peers-的規則與許多可影響路由結果的-Attribute-，而調整或是設定這些-Attribute-是學習-BGP-必備的。"><a href="#BGP-為-Border-Gateway-Protocol-的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。-BGP-通常建構於大型的網路結構中，用於交換不同的-AS-Autonomous-System-之間的路由資訊，例如-ISP-與-ISP-之間的路由交換。-BGP-的複雜性在於建立-Peers-的規則與許多可影響路由結果的-Attribute-，而調整或是設定這些-Attribute-是學習-BGP-必備的。" class="headerlink" title="BGP 為 Border Gateway Protocol 的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。 BGP 通常建構於大型的網路結構中，用於交換不同的 AS ( Autonomous System ) 之間的路由資訊，例如 ISP 與 ISP 之間的路由交換。 BGP 的複雜性在於建立 Peers 的規則與許多可影響路由結果的 Attribute ，而調整或是設定這些 Attribute 是學習 BGP 必備的。"></a>BGP 為 Border Gateway Protocol 的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。 BGP 通常建構於大型的網路結構中，用於交換不同的 AS ( Autonomous System ) 之間的路由資訊，例如 ISP 與 ISP 之間的路由交換。 BGP 的複雜性在於建立 Peers 的規則與許多可影響路由結果的 Attribute ，而調整或是設定這些 Attribute 是學習 BGP 必備的。</h5><h4 id="EBGP-External-BGP-與-IBGP-Internal-BGP"><a href="#EBGP-External-BGP-與-IBGP-Internal-BGP" class="headerlink" title="EBGP ( External BGP )  與 IBGP ( Internal BGP )"></a>EBGP ( External BGP )  與 IBGP ( Internal BGP )</h4><h5 id="Routing-Protocol-大多從組成-Neighbors開始，在-BGP-中則稱為-Peers。Peers-使用-TCP-179-port溝通，而Peers-又分為-Internal-BGP-與-External-BGP-。"><a href="#Routing-Protocol-大多從組成-Neighbors開始，在-BGP-中則稱為-Peers。Peers-使用-TCP-179-port溝通，而Peers-又分為-Internal-BGP-與-External-BGP-。" class="headerlink" title="Routing Protocol 大多從組成 Neighbors開始，在 BGP 中則稱為 Peers。Peers 使用 TCP 179 port溝通，而Peers 又分為 Internal BGP 與 External BGP 。"></a>Routing Protocol 大多從組成 Neighbors開始，在 BGP 中則稱為 Peers。Peers 使用 TCP 179 port溝通，而Peers 又分為 Internal BGP 與 External BGP 。</h5><h5 id="如果兩個-Router-位於相同的-AS-中組成-Peers，即為-IBGP-，反之若是位於不同的-AS-中組成-Peers，則為-EBGP，下圖為-IBGP-以及-EBGP-的範例。"><a href="#如果兩個-Router-位於相同的-AS-中組成-Peers，即為-IBGP-，反之若是位於不同的-AS-中組成-Peers，則為-EBGP，下圖為-IBGP-以及-EBGP-的範例。" class="headerlink" title="如果兩個 Router 位於相同的 AS 中組成 Peers，即為 IBGP ，反之若是位於不同的 AS 中組成 Peers，則為 EBGP，下圖為 IBGP 以及 EBGP 的範例。"></a>如果兩個 Router 位於相同的 AS 中組成 Peers，即為 IBGP ，反之若是位於不同的 AS 中組成 Peers，則為 EBGP，下圖為 IBGP 以及 EBGP 的範例。</h5>
+          <h1 id="BGP-Border-Gateway-Protocol"><a href="#BGP-Border-Gateway-Protocol" class="headerlink" title="BGP ( Border Gateway Protocol )"></a>BGP ( Border Gateway Protocol )</h1><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><h5 id="BGP-為-Border-Gateway-Protocol-的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。-BGP-通常建構於大型的網路結構中，用於交換不同的-AS-Autonomous-System-之間的路由資訊，例如-ISP-與-ISP-之間的路由交換。-BGP-的複雜性在於建立-Peers-的規則與許多可影響路由結果的-Attribute-，而調整或是設定這些-Attribute-是學習-BGP-必備的。"><a href="#BGP-為-Border-Gateway-Protocol-的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。-BGP-通常建構於大型的網路結構中，用於交換不同的-AS-Autonomous-System-之間的路由資訊，例如-ISP-與-ISP-之間的路由交換。-BGP-的複雜性在於建立-Peers-的規則與許多可影響路由結果的-Attribute-，而調整或是設定這些-Attribute-是學習-BGP-必備的。" class="headerlink" title="BGP 為 Border Gateway Protocol 的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。 BGP 通常建構於大型的網路結構中，用於交換不同的 AS ( Autonomous System ) 之間的路由資訊，例如 ISP 與 ISP 之間的路由交換。 BGP 的複雜性在於建立 Peers 的規則與許多可影響路由結果的 Attribute ，而調整或是設定這些 Attribute 是學習 BGP 必備的。"></a>BGP 為 Border Gateway Protocol 的縮寫，目前多使用的版本是BGP-4，稱為Version4，亦是最常學習和應用的版本。 BGP 通常建構於大型的網路結構中，用於交換不同的 AS ( Autonomous System ) 之間的路由資訊，例如 ISP 與 ISP 之間的路由交換。 BGP 的複雜性在於建立 Peers 的規則與許多可影響路由結果的 Attribute ，而調整或是設定這些 Attribute 是學習 BGP 必備的。</h5><h4 id="EBGP-External-BGP-與-IBGP-Internal-BGP"><a href="#EBGP-External-BGP-與-IBGP-Internal-BGP" class="headerlink" title="EBGP ( External BGP )  與 IBGP ( Internal BGP )"></a>EBGP ( External BGP )  與 IBGP ( Internal BGP )</h4><h5 id="Routing-Protocol-大多從組成-Neighbors開始，在-BGP-中則稱為-Peers。Peers-使用-TCP-179-port溝通，而Peers-又分為-Internal-BGP-與-External-BGP-。"><a href="#Routing-Protocol-大多從組成-Neighbors開始，在-BGP-中則稱為-Peers。Peers-使用-TCP-179-port溝通，而Peers-又分為-Internal-BGP-與-External-BGP-。" class="headerlink" title="Routing Protocol 大多從組成 Neighbors開始，在 BGP 中則稱為 Peers。Peers 使用 TCP 179 port溝通，而Peers 又分為 Internal BGP 與 External BGP 。"></a>Routing Protocol 大多從組成 Neighbors開始，在 BGP 中則稱為 Peers。Peers 使用 TCP 179 port溝通，而Peers 又分為 Internal BGP 與 External BGP 。</h5><h5 id="如果兩個-Router-位於相同的-AS-中組成-Peers，即為-IBGP-，反之若是位於不同的-AS-中組成-Peers，則為-EBGP，下圖為-IBGP-以及-EBGP-的範例。"><a href="#如果兩個-Router-位於相同的-AS-中組成-Peers，即為-IBGP-，反之若是位於不同的-AS-中組成-Peers，則為-EBGP，下圖為-IBGP-以及-EBGP-的範例。" class="headerlink" title="如果兩個 Router 位於相同的 AS 中組成 Peers，即為 IBGP ，反之若是位於不同的 AS 中組成 Peers，則為 EBGP，下圖為 IBGP 以及 EBGP 的範例。"></a>如果兩個 Router 位於相同的 AS 中組成 Peers，即為 IBGP ，反之若是位於不同的 AS 中組成 Peers，則為 EBGP，下圖為 IBGP 以及 EBGP 的範例。</h5><p>![image-20230730120103506](&#x2F;Users&#x2F;wuzhenhao&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20230730120103506.png)</p>
+
       
     </div>
 
@@ -384,10 +391,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2023-07-26 17:39:25 / 修改時間：17:39:49" itemprop="dateCreated datePublished" datetime="2023-07-26T17:39:25+08:00">2023-07-26</time>
+              <time title="創建時間：2023-07-26 17:39:25" itemprop="dateCreated datePublished" datetime="2023-07-26T17:39:25+08:00">2023-07-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-07-29 13:36:28" itemprop="dateModified" datetime="2023-07-29T13:36:28+08:00">2023-07-29</time>
+              </span>
 
           
 
@@ -400,7 +413,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="元素介紹"><a href="#元素介紹" class="headerlink" title="元素介紹"></a>元素介紹</h2><h3 id="標題元素-heading"><a href="#標題元素-heading" class="headerlink" title="標題元素 - heading   &lt;h1&gt; ~ &lt;h6&gt;"></a>標題元素 - heading   <code>&lt;h1&gt; ~ &lt;h6&gt;</code></h3><ul>
+          <h3 id="元素介紹"><a href="#元素介紹" class="headerlink" title="元素介紹"></a>元素介紹</h3><h5 id="標題元素-heading"><a href="#標題元素-heading" class="headerlink" title="標題元素 - heading   &lt;h1&gt; ~ &lt;h6&gt;"></a>標題元素 - heading   <code>&lt;h1&gt; ~ &lt;h6&gt;</code></h5><ul>
 <li><em><strong>HTML</strong></em> 擁有不同的標題大小設置分別為 <code>&lt;h1&gt;</code> ～ <code>&lt;h6&gt;</code>，數字越小的標題顯示後越大，以下為顯示之範例：</li>
 </ul>
 <h1>這是h1</h1>
@@ -415,26 +428,23 @@
 
 <h6>這是h6</h6>
 
-<h3 id="段落元素-paragraph"><a href="#段落元素-paragraph" class="headerlink" title="段落元素 - paragraph &lt;p&gt;"></a>段落元素 - paragraph <code>&lt;p&gt;</code></h3><p>第一段在這裡</p>
+<h5 id="段落元素-paragraph"><a href="#段落元素-paragraph" class="headerlink" title="段落元素 - paragraph &lt;p&gt;"></a>段落元素 - paragraph <code>&lt;p&gt;</code></h5><p>第一段在這裡</p>
 
 <p>第二段在這裡</p>
 
-<h3 id="清單元素-Unordered-List-Ordered-List"><a href="#清單元素-Unordered-List-Ordered-List" class="headerlink" title="清單元素 - Unordered List &lt;ul&gt;  Ordered List &lt;ol&gt;"></a>清單元素 - Unordered List <code>&lt;ul&gt;</code>  Ordered List <code>&lt;ol&gt;</code></h3><ul>
+<h5 id="清單元素-Unordered-List-Ordered-List"><a href="#清單元素-Unordered-List-Ordered-List" class="headerlink" title="清單元素 - Unordered List &lt;ul&gt;  Ordered List &lt;ol&gt;"></a>清單元素 - Unordered List <code>&lt;ul&gt;</code>  Ordered List <code>&lt;ol&gt;</code></h5><ul>
 <li>清單元素內會包裹<code>&lt;li&gt;</code>分別列出每一項，其結構如下：</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">	&lt;li&gt;第一項&lt;/li&gt;</span><br><span class="line">	.</span><br><span class="line">	.</span><br><span class="line">	&lt;li&gt;第n項&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
 
-<h3 id="斜體-italic-注重-emphasize"><a href="#斜體-italic-注重-emphasize" class="headerlink" title="斜體 - italic &lt;i&gt; 注重 - emphasize &lt;em&gt;"></a>斜體 - italic <code>&lt;i&gt;</code> 注重 - emphasize <code>&lt;em&gt;</code></h3><p><i> i 斜體</i>   </p>
+<h5 id="斜體-italic-注重-emphasize"><a href="#斜體-italic-注重-emphasize" class="headerlink" title="斜體 - italic &lt;i&gt; 注重 - emphasize &lt;em&gt;"></a>斜體 - italic <code>&lt;i&gt;</code> 注重 - emphasize <code>&lt;em&gt;</code></h5><p><i> i 斜體</i>   </p>
 <p><em>em 斜體</em></p>
-<h3 id="粗體-bring-Attention-To-strong"><a href="#粗體-bring-Attention-To-strong" class="headerlink" title="粗體 - bring Attention To &lt;b&gt; strong &lt;strong&gt;"></a>粗體 - bring Attention To <code>&lt;b&gt;</code> strong <code>&lt;strong&gt;</code></h3><p><b>b 粗體 </b></p>
-<p><strong>strong 粗體</strong></p>
-<h3 id="斷行"><a href="#斷行" class="headerlink" title="斷行 - &lt;br&gt;"></a>斷行 - <code>&lt;br&gt;</code></h3><h3 id="水平線"><a href="#水平線" class="headerlink" title="水平線 - &lt;hr&gt;"></a>水平線 - <code>&lt;hr&gt;</code></h3><hr>
-<h3 id="超連結-anchor"><a href="#超連結-anchor" class="headerlink" title="超連結 - anchor &lt;a&gt;"></a>超連結 - anchor <code>&lt;a&gt;</code></h3><p><a>超連結</a></p>
-<h3 id="建立一網頁用於排版練習"><a href="#建立一網頁用於排版練習" class="headerlink" title="建立一網頁用於排版練習"></a>建立一網頁用於排版練習</h3><ul>
-<li>上述以及之前所提及之元素建立一網頁</li>
-</ul>
-<h3 id="參考資料："><a href="#參考資料：" class="headerlink" title="參考資料："></a>參考資料：</h3><ol>
-<li>[ HTML 元素- HTML：超文本標記語言 - MDN Web Docs ](</li>
+<h5 id="粗體-bring-Attention-To-strong"><a href="#粗體-bring-Attention-To-strong" class="headerlink" title="粗體 - bring Attention To &lt;b&gt; strong &lt;strong&gt;"></a>粗體 - bring Attention To <code>&lt;b&gt;</code> strong <code>&lt;strong&gt;</code></h5><h5 id="b-粗體"><a href="#b-粗體" class="headerlink" title="b 粗體 "></a><b>b 粗體 </b></h5><h5 id="strong-粗體"><a href="#strong-粗體" class="headerlink" title="strong 粗體"></a><strong>strong 粗體</strong></h5><h5 id="斷行"><a href="#斷行" class="headerlink" title="斷行 - &lt;br&gt;"></a>斷行 - <code>&lt;br&gt;</code></h5><h5 id="水平線"><a href="#水平線" class="headerlink" title="水平線 - &lt;hr&gt;"></a>水平線 - <code>&lt;hr&gt;</code></h5><hr>
+<h5 id="超連結-anchor"><a href="#超連結-anchor" class="headerlink" title="超連結 - anchor &lt;a&gt;"></a>超連結 - anchor <code>&lt;a&gt;</code></h5><p><a>超連結</a></p>
+<h3 id="Live-server"><a href="#Live-server" class="headerlink" title="Live server"></a>Live server</h3><h3 id="建立一網頁用於排版練習"><a href="#建立一網頁用於排版練習" class="headerlink" title="建立一網頁用於排版練習"></a>建立一網頁用於排版練習</h3><h5 id="底下是一個範例的Context，若是直接將-Context-貼上-Editor-就只是一串文字，但現在可以利用上述的元素-Element-進行編排。"><a href="#底下是一個範例的Context，若是直接將-Context-貼上-Editor-就只是一串文字，但現在可以利用上述的元素-Element-進行編排。" class="headerlink" title="底下是一個範例的Context，若是直接將 Context 貼上 Editor 就只是一串文字，但現在可以利用上述的元素 ( Element ) 進行編排。"></a>底下是一個範例的Context，若是直接將 Context 貼上 Editor 就只是一串文字，但現在可以利用上述的元素 ( Element ) 進行編排。</h5><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">Context</span><br><span class="line">📘 The Code Magazine</span><br><span class="line"></span><br><span class="line">Mastering CSS: Building Stylish Web Pages</span><br><span class="line"></span><br><span class="line">Posted by Michael Smith on Tuesday, July 5th 2027</span><br><span class="line"></span><br><span class="line">When it comes to web development, CSS (Cascading Style Sheets) plays a crucial role in creating stylish and visually appealing web pages. In this article, we&#x27;ll delve into the world of CSS and explore why it&#x27;s a must-learn skill for every web developer.</span><br><span class="line"></span><br><span class="line">What is CSS?</span><br><span class="line"></span><br><span class="line">CSS, short for Cascading Style Sheets, is a style sheet language used to control the presentation and layout of HTML documents. While HTML takes care of structuring the content, CSS focuses on how that content should be visually displayed on the screen.</span><br><span class="line"></span><br><span class="line">CSS works by defining rules that target specific HTML elements. These rules determine attributes like colors, fonts, margins, padding, and more. By separating the content (HTML) from its presentation (CSS), developers can easily create consistent styles across an entire website.</span><br><span class="line"></span><br><span class="line">The Anatomy of CSS Rules:</span><br><span class="line"></span><br><span class="line">CSS rules consist of two main parts: a selector and a declaration block.</span><br><span class="line"></span><br><span class="line">Selector: The selector points to the HTML element that you want to style. It can be a specific tag (e.g., &lt;h1&gt;, &lt;p&gt;, &lt;a&gt;), a class (e.g., .highlight, .btn), an ID (e.g., <span class="params">#</span>header, <span class="params">#</span>footer), or even a group of elements.</span><br><span class="line">Declaration Block: The declaration block sits within curly braces (&#123;&#125;) and contains one or more property-value pairs. Each property corresponds to a styling attribute (e.g., color, font-size), and its value specifies how that attribute should be applied.</span><br><span class="line">For example:</span><br><span class="line"></span><br><span class="line">Why should you learn CSS?</span><br><span class="line"></span><br><span class="line">Complete Control over Design: Learning CSS empowers you to have full control over the appearance of your web pages. You can create unique and captivating designs that align perfectly with your vision.</span><br><span class="line">Responsive Web Design: With CSS, you can implement responsive design principles, ensuring that your websites look great on various devices, from large desktops to small smartphones.</span><br><span class="line">Enhance User Experience: By mastering CSS, you can optimize the layout and presentation of your content, resulting in an improved user experience and increased engagement.</span><br><span class="line">Compatibility with Frameworks: Many popular web frameworks and content management systems (CMS) rely heavily on CSS. Having a strong foundation in CSS will make it easier for you to work with these tools.</span><br><span class="line">Career Advancement: Web developers with excellent CSS skills are highly sought after by companies looking to create visually stunning and user-friendly websites.</span><br><span class="line">Remember, while HTML provides the structure, CSS adds the beauty and flair. Together, they are a powerful combination that every web developer should master.</span><br><span class="line"></span><br><span class="line">Start your journey into the world of CSS today, and you&#x27;ll soon be creating web pages that not only function flawlessly but also look stunningly impressive!</span><br><span class="line"></span><br><span class="line">Happy coding! 😊</span><br></pre></td></tr></table></figure>
+
+<h5 id="經過編排後可以做出類似如下的版面："><a href="#經過編排後可以做出類似如下的版面：" class="headerlink" title="經過編排後可以做出類似如下的版面："></a>經過編排後可以做出類似如下的版面：</h5><h3 id="參考資料："><a href="#參考資料：" class="headerlink" title="參考資料："></a>參考資料：</h3><ol>
+<li><h5 id="HTML-元素-HTML：超文本標記語言-MDN-Web-Docs"><a href="#HTML-元素-HTML：超文本標記語言-MDN-Web-Docs" class="headerlink" title=" HTML 元素- HTML：超文本標記語言 - MDN Web Docs "></a><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element" title="Title"> HTML 元素- HTML：超文本標記語言 - MDN Web Docs </a></h5></li>
 </ol>
 
       
@@ -478,10 +488,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2023-07-26 17:39:06 / 修改時間：17:39:22" itemprop="dateCreated datePublished" datetime="2023-07-26T17:39:06+08:00">2023-07-26</time>
+              <time title="創建時間：2023-07-26 17:39:06" itemprop="dateCreated datePublished" datetime="2023-07-26T17:39:06+08:00">2023-07-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-07-29 13:36:17" itemprop="dateModified" datetime="2023-07-29T13:36:17+08:00">2023-07-29</time>
+              </span>
 
           
 
@@ -494,15 +510,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="什麼是-HTML"><a href="#什麼是-HTML" class="headerlink" title="什麼是 HTML"></a>什麼是 HTML</h2><ul>
-<li><em><strong>HTML</strong></em>（ <em><strong>Hyper Text Markup Language</strong></em> ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 <em><strong>html</strong></em> 程式呈現為網站。</li>
+          <h3 id="什麼是-HTML"><a href="#什麼是-HTML" class="headerlink" title="什麼是 HTML"></a>什麼是 HTML</h3><ul>
+<li><h5 id="HTML（-Hyper-Text-Markup-Language-）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將-html-程式呈現為網站。"><a href="#HTML（-Hyper-Text-Markup-Language-）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將-html-程式呈現為網站。" class="headerlink" title="HTML（ Hyper Text Markup Language ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 html 程式呈現為網站。"></a><em><strong>HTML</strong></em>（ <em><strong>Hyper Text Markup Language</strong></em> ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 <em><strong>html</strong></em> 程式呈現為網站。</h5></li>
 <li></li>
 </ul>
-<h2 id="你的第一個網頁"><a href="#你的第一個網頁" class="headerlink" title="你的第一個網頁"></a>你的第一個網頁</h2><ul>
-<li><p>已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 <em><strong>html</strong></em> 程式撰寫，第一支程式不外乎都是從最經典的 <code>Hello World</code> 開始：</p>
-<ol>
-<li>於桌面新增一專案資料夾並以 <em><strong>VS Code</strong></em> 開啟</li>
-<li>在資料節內新增一檔案為 <em><strong>index.html</strong></em> 之檔案，記住副檔名須為 <em><strong>.html</strong></em>
+<h3 id="你的第一個網頁"><a href="#你的第一個網頁" class="headerlink" title="你的第一個網頁"></a>你的第一個網頁</h3><ul>
+<li><h5 id="已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的-html-程式撰寫，第一支程式不外乎都是從最經典的-Hello-World-開始："><a href="#已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的-html-程式撰寫，第一支程式不外乎都是從最經典的-Hello-World-開始：" class="headerlink" title="已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 html 程式撰寫，第一支程式不外乎都是從最經典的 Hello World 開始："></a>已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 <em><strong>html</strong></em> 程式撰寫，第一支程式不外乎都是從最經典的 <code>Hello World</code> 開始：</h5><ol>
+<li><h6 id="於桌面新增一專案資料夾並以-VS-Code-開啟"><a href="#於桌面新增一專案資料夾並以-VS-Code-開啟" class="headerlink" title="於桌面新增一專案資料夾並以 VS Code 開啟"></a>於桌面新增一專案資料夾並以 <em><strong>VS Code</strong></em> 開啟</h6></li>
+<li><h6 id="在資料節內新增一檔案為-index-html-之檔案，記住副檔名須為-html"><a href="#在資料節內新增一檔案為-index-html-之檔案，記住副檔名須為-html" class="headerlink" title="在資料節內新增一檔案為 index.html 之檔案，記住副檔名須為 .html "></a>在資料節內新增一檔案為 <em><strong>index.html</strong></em> 之檔案，記住副檔名須為 <em><strong>.html</strong></em>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/html-css-01/#more" rel="contents">
@@ -552,10 +567,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2023-07-23 22:02:03 / 修改時間：22:51:23" itemprop="dateCreated datePublished" datetime="2023-07-23T22:02:03+08:00">2023-07-23</time>
+              <time title="創建時間：2023-07-23 22:02:03" itemprop="dateCreated datePublished" datetime="2023-07-23T22:02:03+08:00">2023-07-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-07-30 11:47:42" itemprop="dateModified" datetime="2023-07-30T11:47:42+08:00">2023-07-30</time>
+              </span>
 
           
 
@@ -568,10 +589,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="開發環境安裝"><a href="#開發環境安裝" class="headerlink" title="開發環境安裝"></a>開發環境安裝</h2><hr>
+          <h3 id="開發環境安裝"><a href="#開發環境安裝" class="headerlink" title="開發環境安裝"></a>開發環境安裝</h3><hr>
 <ul>
-<li><p>編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器 (  <em><strong>Integrated Develop Environment</strong></em>，簡稱 <em><strong>IDE</strong></em>  )，<em><strong>IDE</strong></em> 是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用<em><strong>Visual Studio</strong></em> ( 簡稱 <em><strong>VS Code</strong></em> ) 作為  <em><strong>IDE</strong></em> ，其官方下載位址如下：</p>
-<p>​          <a target="_blank" rel="noopener" href="https://code.visualstudio.com/" title="Title">Visual Studio</a>
+<li><h5 id="編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器-Integrated-Develop-Environment，簡稱-IDE-，IDE-是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用Visual-Studio-簡稱-VS-Code-作為-IDE-，其官方下載位址如下："><a href="#編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器-Integrated-Develop-Environment，簡稱-IDE-，IDE-是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用Visual-Studio-簡稱-VS-Code-作為-IDE-，其官方下載位址如下：" class="headerlink" title="編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器 (  Integrated Develop Environment，簡稱 IDE  )，IDE 是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用Visual Studio ( 簡稱 VS Code ) 作為  IDE ，其官方下載位址如下："></a>編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器 (  <em><strong>Integrated Develop Environment</strong></em>，簡稱 <em><strong>IDE</strong></em>  )，<em><strong>IDE</strong></em> 是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用<em><strong>Visual Studio</strong></em> ( 簡稱 <em><strong>VS Code</strong></em> ) 作為  <em><strong>IDE</strong></em> ，其官方下載位址如下：</h5>​          <a target="_blank" rel="noopener" href="https://code.visualstudio.com/" title="Title">Visual Studio</a>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/html-css-00/#more" rel="contents">
@@ -580,76 +600,6 @@
             </div>
           <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://example.com/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="kay_wu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="kay_wu Note">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-
-              <time title="創建時間：2023-07-22 02:15:41" itemprop="dateCreated datePublished" datetime="2023-07-22T02:15:41+08:00">2023-07-22</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
       
     </div>
 
@@ -729,7 +679,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>

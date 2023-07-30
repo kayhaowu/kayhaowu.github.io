@@ -20,20 +20,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="開發環境安裝  編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器 (  Integrated Develop Environment，簡稱 IDE  )，IDE 是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用Visual Studio ( 簡稱 VS Code ) 作為  IDE ，其官方下載位址如下： ​          Visual Studio">
+  <meta name="description" content="開發環境安裝  編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器 (  Integrated Develop Environment，簡稱 IDE  )，IDE 是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用Visual Studio ( 簡稱 VS Code ) 作為  IDE ，其官方下載位址如下：​          Visual Studio">
 <meta property="og:type" content="article">
 <meta property="og:title" content="html_css-00">
 <meta property="og:url" content="http://example.com/html-css-00/">
 <meta property="og:site_name" content="kay_wu Note">
-<meta property="og:description" content="開發環境安裝  編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器 (  Integrated Develop Environment，簡稱 IDE  )，IDE 是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用Visual Studio ( 簡稱 VS Code ) 作為  IDE ，其官方下載位址如下： ​          Visual Studio">
+<meta property="og:description" content="開發環境安裝  編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器 (  Integrated Develop Environment，簡稱 IDE  )，IDE 是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用Visual Studio ( 簡稱 VS Code ) 作為  IDE ，其官方下載位址如下：​          Visual Studio">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://i.imgur.com/dPukiqM.png">
 <meta property="og:image" content="https://i.imgur.com/7szZLX7.png">
 <meta property="og:image" content="https://i.imgur.com/wprtZIA.png">
 <meta property="og:image" content="https://i.imgur.com/uNumdmf.jpg">
 <meta property="og:image" content="https://i.imgur.com/M9YqBjl.png">
+<meta property="og:image" content="https://i.imgur.com/WLW3xfZ.png">
 <meta property="article:published_time" content="2023-07-23T14:02:03.000Z">
-<meta property="article:modified_time" content="2023-07-23T14:51:23.687Z">
+<meta property="article:modified_time" content="2023-07-30T03:47:42.307Z">
 <meta property="article:author" content="kay_wu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.imgur.com/dPukiqM.png">
@@ -185,10 +186,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2023-07-23 22:02:03 / 修改時間：22:51:23" itemprop="dateCreated datePublished" datetime="2023-07-23T22:02:03+08:00">2023-07-23</time>
+              <time title="創建時間：2023-07-23 22:02:03" itemprop="dateCreated datePublished" datetime="2023-07-23T22:02:03+08:00">2023-07-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-07-30 11:47:42" itemprop="dateModified" datetime="2023-07-30T11:47:42+08:00">2023-07-30</time>
+              </span>
 
           
 
@@ -201,35 +208,31 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="開發環境安裝"><a href="#開發環境安裝" class="headerlink" title="開發環境安裝"></a>開發環境安裝</h2><hr>
+        <h3 id="開發環境安裝"><a href="#開發環境安裝" class="headerlink" title="開發環境安裝"></a>開發環境安裝</h3><hr>
 <ul>
-<li><p>編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器 (  <em><strong>Integrated Develop Environment</strong></em>，簡稱 <em><strong>IDE</strong></em>  )，<em><strong>IDE</strong></em> 是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用<em><strong>Visual Studio</strong></em> ( 簡稱 <em><strong>VS Code</strong></em> ) 作為  <em><strong>IDE</strong></em> ，其官方下載位址如下：</p>
-<p>​          <a target="_blank" rel="noopener" href="https://code.visualstudio.com/" title="Title">Visual Studio</a><span id="more"></span></p>
-</li>
+<li><h5 id="編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器-Integrated-Develop-Environment，簡稱-IDE-，IDE-是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用Visual-Studio-簡稱-VS-Code-作為-IDE-，其官方下載位址如下："><a href="#編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器-Integrated-Develop-Environment，簡稱-IDE-，IDE-是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用Visual-Studio-簡稱-VS-Code-作為-IDE-，其官方下載位址如下：" class="headerlink" title="編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器 (  Integrated Develop Environment，簡稱 IDE  )，IDE 是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用Visual Studio ( 簡稱 VS Code ) 作為  IDE ，其官方下載位址如下："></a>編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器 (  <em><strong>Integrated Develop Environment</strong></em>，簡稱 <em><strong>IDE</strong></em>  )，<em><strong>IDE</strong></em> 是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用<em><strong>Visual Studio</strong></em> ( 簡稱 <em><strong>VS Code</strong></em> ) 作為  <em><strong>IDE</strong></em> ，其官方下載位址如下：</h5>​          <a target="_blank" rel="noopener" href="https://code.visualstudio.com/" title="Title">Visual Studio</a><span id="more"></span></li>
 </ul>
 <p><img src="https://i.imgur.com/dPukiqM.png" alt="image-20221216000147278"></p>
-<h2 id="VS-Code-設定"><a href="#VS-Code-設定" class="headerlink" title="VS Code 設定"></a>VS Code 設定</h2><h3 id="Files：Auto-Save"><a href="#Files：Auto-Save" class="headerlink" title="Files：Auto Save"></a>Files：Auto Save</h3><ul>
-<li><p>設定自動存檔選項為 <em><strong>onFocusChange</strong></em>，此設定之功用為當使用者離開編輯器或點選其他視窗時，會自動儲存當下所編輯之檔案，其操作說明如下圖所示：</p>
-<p><img src="https://i.imgur.com/7szZLX7.png" alt="image-20221216101103734"></p>
-</li>
+<h3 id="VS-Code-設定"><a href="#VS-Code-設定" class="headerlink" title="VS Code 設定"></a>VS Code 設定</h3><h4 id="Files：Auto-Save"><a href="#Files：Auto-Save" class="headerlink" title="Files：Auto Save"></a>Files：Auto Save</h4><ul>
+<li><h5 id="設定自動存檔選項為-onFocusChange，此設定之功用為當使用者離開編輯器或點選其他視窗時，會自動儲存當下所編輯之檔案，其操作說明如下圖所示："><a href="#設定自動存檔選項為-onFocusChange，此設定之功用為當使用者離開編輯器或點選其他視窗時，會自動儲存當下所編輯之檔案，其操作說明如下圖所示：" class="headerlink" title="設定自動存檔選項為 onFocusChange，此設定之功用為當使用者離開編輯器或點選其他視窗時，會自動儲存當下所編輯之檔案，其操作說明如下圖所示："></a>設定自動存檔選項為 <em><strong>onFocusChange</strong></em>，此設定之功用為當使用者離開編輯器或點選其他視窗時，會自動儲存當下所編輯之檔案，其操作說明如下圖所示：</h5><img src="https://i.imgur.com/7szZLX7.png" alt="image-20221216101103734"></li>
 </ul>
-<h3 id="下載插件-Prettier-格式化工具"><a href="#下載插件-Prettier-格式化工具" class="headerlink" title="下載插件 Prettier - 格式化工具"></a>下載插件 Prettier - 格式化工具</h3><ul>
-<li>為了使撰寫程式更便捷，可下載 <em><strong>VS Code</strong></em> 的延伸插件，訂製符合自己使用習慣的編輯器，首先可下載 <em><strong>Prettier</strong></em>，此款插件是現行叫流行的插件工具，功能是在使用者儲存程式碼時，會自動格式化（排版）程式碼，便於使用者更容易找出程式碼中的任何錯誤，其安裝流程如下圖所示：</li>
+<h4 id="下載插件-Prettier-格式化工具"><a href="#下載插件-Prettier-格式化工具" class="headerlink" title="下載插件 Prettier - 格式化工具"></a>下載插件 Prettier - 格式化工具</h4><ul>
+<li><h5 id="為了使撰寫程式更便捷，可下載-VS-Code-的延伸插件，訂製符合自己使用習慣的編輯器，首先可下載-Prettier，此款插件是現行叫流行的插件工具，功能是在使用者儲存程式碼時，會自動格式化（排版）程式碼，便於使用者更容易找出程式碼中的任何錯誤，其安裝流程如下圖所示："><a href="#為了使撰寫程式更便捷，可下載-VS-Code-的延伸插件，訂製符合自己使用習慣的編輯器，首先可下載-Prettier，此款插件是現行叫流行的插件工具，功能是在使用者儲存程式碼時，會自動格式化（排版）程式碼，便於使用者更容易找出程式碼中的任何錯誤，其安裝流程如下圖所示：" class="headerlink" title="為了使撰寫程式更便捷，可下載 VS Code 的延伸插件，訂製符合自己使用習慣的編輯器，首先可下載 Prettier，此款插件是現行叫流行的插件工具，功能是在使用者儲存程式碼時，會自動格式化（排版）程式碼，便於使用者更容易找出程式碼中的任何錯誤，其安裝流程如下圖所示："></a>為了使撰寫程式更便捷，可下載 <em><strong>VS Code</strong></em> 的延伸插件，訂製符合自己使用習慣的編輯器，首先可下載 <em><strong>Prettier</strong></em>，此款插件是現行叫流行的插件工具，功能是在使用者儲存程式碼時，會自動格式化（排版）程式碼，便於使用者更容易找出程式碼中的任何錯誤，其安裝流程如下圖所示：</h5></li>
 </ul>
 <p><img src="https://i.imgur.com/wprtZIA.png" alt="image-20221216080230973"></p>
 <ul>
-<li><p>設定 <em><strong>Prettier</strong></em> 流程，點選<em><strong>左下角齒輪</strong></em> -&gt; 點選 <em><strong>Settings</strong></em> -&gt; 搜尋欄搜尋 <em><strong>default format</strong></em> -&gt; 選擇 <em><strong>Prettier - Code formatter</strong></em>：</p>
-<p><img src="https://i.imgur.com/uNumdmf.jpg" alt="image-20221216101253827"></p>
-</li>
+<li><h5 id="設定-Prettier-流程，點選左下角齒輪-點選-Settings-搜尋欄搜尋-default-format-選擇-Prettier-Code-formatter："><a href="#設定-Prettier-流程，點選左下角齒輪-點選-Settings-搜尋欄搜尋-default-format-選擇-Prettier-Code-formatter：" class="headerlink" title="設定 Prettier 流程，點選左下角齒輪 -&gt; 點選 Settings -&gt; 搜尋欄搜尋 default format -&gt; 選擇 Prettier - Code formatter："></a>設定 <em><strong>Prettier</strong></em> 流程，點選<em><strong>左下角齒輪</strong></em> -&gt; 點選 <em><strong>Settings</strong></em> -&gt; 搜尋欄搜尋 <em><strong>default format</strong></em> -&gt; 選擇 <em><strong>Prettier - Code formatter</strong></em>：</h5><img src="https://i.imgur.com/uNumdmf.jpg" alt="image-20221216101253827"></li>
 </ul>
-<h3 id="Editor：Format-On-Save"><a href="#Editor：Format-On-Save" class="headerlink" title="Editor：Format On Save"></a>Editor：Format On Save</h3><ul>
-<li><p>使用搜尋欄搜尋 <em><strong>Format On Save</strong></em> 並勾選其選項，此設定之功能表示儲存時自動格式化，如下圖所示：</p>
-<p><img src="https://i.imgur.com/M9YqBjl.png" alt="image-20221216080424603"></p>
-</li>
+<h4 id="Editor：Format-On-Save"><a href="#Editor：Format-On-Save" class="headerlink" title="Editor：Format On Save"></a>Editor：Format On Save</h4><ul>
+<li><h5 id="使用搜尋欄搜尋-Format-On-Save-並勾選其選項，此設定之功能表示儲存時自動格式化，如下圖所示："><a href="#使用搜尋欄搜尋-Format-On-Save-並勾選其選項，此設定之功能表示儲存時自動格式化，如下圖所示：" class="headerlink" title="使用搜尋欄搜尋 Format On Save 並勾選其選項，此設定之功能表示儲存時自動格式化，如下圖所示："></a>使用搜尋欄搜尋 <em><strong>Format On Save</strong></em> 並勾選其選項，此設定之功能表示儲存時自動格式化，如下圖所示：</h5><img src="https://i.imgur.com/M9YqBjl.png" alt="image-20221216080424603"></li>
 </ul>
-<h3 id="HTML：-Auto-Closing-Tags"><a href="#HTML：-Auto-Closing-Tags" class="headerlink" title="HTML： Auto Closing Tags"></a>HTML： Auto Closing Tags</h3><ul>
-<li>使用搜尋欄位搜尋 <em><strong>Auto Closing Tags</strong></em> 並勾選 <em><strong>HTML：Auto Closing Tags</strong></em> 選項，此設定之功能為鐺開啟一元素標籤後，會自動補上結束標籤。</li>
+<h4 id="HTML：-Auto-Closing-Tags"><a href="#HTML：-Auto-Closing-Tags" class="headerlink" title="HTML： Auto Closing Tags"></a>HTML： Auto Closing Tags</h4><ul>
+<li><h5 id="使用搜尋欄位搜尋-Auto-Closing-Tags-並勾選-HTML：Auto-Closing-Tags-選項，此設定之功能為鐺開啟一元素標籤後，會自動補上結束標籤。"><a href="#使用搜尋欄位搜尋-Auto-Closing-Tags-並勾選-HTML：Auto-Closing-Tags-選項，此設定之功能為鐺開啟一元素標籤後，會自動補上結束標籤。" class="headerlink" title="使用搜尋欄位搜尋 Auto Closing Tags 並勾選 HTML：Auto Closing Tags 選項，此設定之功能為鐺開啟一元素標籤後，會自動補上結束標籤。"></a>使用搜尋欄位搜尋 <em><strong>Auto Closing Tags</strong></em> 並勾選 <em><strong>HTML：Auto Closing Tags</strong></em> 選項，此設定之功能為鐺開啟一元素標籤後，會自動補上結束標籤。</h5></li>
 </ul>
+<h4 id="安裝-Live-Server"><a href="#安裝-Live-Server" class="headerlink" title="安裝 Live Server"></a>安裝 Live Server</h4><ul>
+<li><h5 id="開啟-Live-Server-後，在每次儲存檔案後會將修改的程式更新在網頁上，便於開發。"><a href="#開啟-Live-Server-後，在每次儲存檔案後會將修改的程式更新在網頁上，便於開發。" class="headerlink" title="開啟 Live Server 後，在每次儲存檔案後會將修改的程式更新在網頁上，便於開發。"></a>開啟 Live Server 後，在每次儲存檔案後會將修改的程式更新在網頁上，便於開發。</h5></li>
+</ul>
+<p><img src="https://i.imgur.com/WLW3xfZ.png" alt="image-20230729133501850"></p>
 
     </div>
 
@@ -244,10 +247,7 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
-    </a></div>
+      <div class="post-nav-item"></div>
       <div class="post-nav-item">
     <a href="/html-css-01/" rel="next" title="html-css-01">
       html-css-01 <i class="fa fa-chevron-right"></i>
@@ -310,7 +310,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E5%AE%89%E8%A3%9D"><span class="nav-number">1.</span> <span class="nav-text">開發環境安裝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VS-Code-%E8%A8%AD%E5%AE%9A"><span class="nav-number">2.</span> <span class="nav-text">VS Code 設定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Files%EF%BC%9AAuto-Save"><span class="nav-number">2.1.</span> <span class="nav-text">Files：Auto Save</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BC%89%E6%8F%92%E4%BB%B6-Prettier-%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%B7%A5%E5%85%B7"><span class="nav-number">2.2.</span> <span class="nav-text">下載插件 Prettier - 格式化工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Editor%EF%BC%9AFormat-On-Save"><span class="nav-number">2.3.</span> <span class="nav-text">Editor：Format On Save</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML%EF%BC%9A-Auto-Closing-Tags"><span class="nav-number">2.4.</span> <span class="nav-text">HTML： Auto Closing Tags</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83%E5%AE%89%E8%A3%9D"><span class="nav-number">1.</span> <span class="nav-text">開發環境安裝</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%B7%A8%E5%AF%AB%E4%BB%BB%E4%BD%95%E7%A8%8B%E5%BC%8F%E4%B9%8B%E5%89%8D%EF%BC%8C%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%9D%E4%B8%A6%E9%85%8D%E7%BD%AE%E4%B8%80%E5%80%8B%E7%A8%8B%E5%BC%8F%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8-Integrated-Develop-Environment%EF%BC%8C%E7%B0%A1%E7%A8%B1-IDE-%EF%BC%8CIDE-%E6%98%AF%E4%BB%BB%E4%BD%95%E9%96%8B%E7%99%BC%E4%BA%BA%E5%93%A1%E7%9A%84%E4%B8%BB%E8%A6%81%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%88%91%E5%80%91%E4%BD%BF%E7%94%A8%E5%AE%83%E4%BE%86%E7%B7%A8%E8%BC%AF%E7%A8%8B%E5%BC%8F%EF%BC%8C%E6%8E%A8%E8%96%A6%E4%BD%BF%E7%94%A8Visual-Studio-%E7%B0%A1%E7%A8%B1-VS-Code-%E4%BD%9C%E7%82%BA-IDE-%EF%BC%8C%E5%85%B6%E5%AE%98%E6%96%B9%E4%B8%8B%E8%BC%89%E4%BD%8D%E5%9D%80%E5%A6%82%E4%B8%8B%EF%BC%9A"><span class="nav-number">1.0.1.</span> <span class="nav-text">編寫任何程式之前，需要安裝並配置一個程式程式語言的編輯器 (  Integrated Develop Environment，簡稱 IDE  )，IDE 是任何開發人員的主要工具，我們使用它來編輯程式，推薦使用Visual Studio ( 簡稱 VS Code ) 作為  IDE ，其官方下載位址如下：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VS-Code-%E8%A8%AD%E5%AE%9A"><span class="nav-number">2.</span> <span class="nav-text">VS Code 設定</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Files%EF%BC%9AAuto-Save"><span class="nav-number">2.1.</span> <span class="nav-text">Files：Auto Save</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%8B%95%E5%AD%98%E6%AA%94%E9%81%B8%E9%A0%85%E7%82%BA-onFocusChange%EF%BC%8C%E6%AD%A4%E8%A8%AD%E5%AE%9A%E4%B9%8B%E5%8A%9F%E7%94%A8%E7%82%BA%E7%95%B6%E4%BD%BF%E7%94%A8%E8%80%85%E9%9B%A2%E9%96%8B%E7%B7%A8%E8%BC%AF%E5%99%A8%E6%88%96%E9%BB%9E%E9%81%B8%E5%85%B6%E4%BB%96%E8%A6%96%E7%AA%97%E6%99%82%EF%BC%8C%E6%9C%83%E8%87%AA%E5%8B%95%E5%84%B2%E5%AD%98%E7%95%B6%E4%B8%8B%E6%89%80%E7%B7%A8%E8%BC%AF%E4%B9%8B%E6%AA%94%E6%A1%88%EF%BC%8C%E5%85%B6%E6%93%8D%E4%BD%9C%E8%AA%AA%E6%98%8E%E5%A6%82%E4%B8%8B%E5%9C%96%E6%89%80%E7%A4%BA%EF%BC%9A"><span class="nav-number">2.1.1.</span> <span class="nav-text">設定自動存檔選項為 onFocusChange，此設定之功用為當使用者離開編輯器或點選其他視窗時，會自動儲存當下所編輯之檔案，其操作說明如下圖所示：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8B%E8%BC%89%E6%8F%92%E4%BB%B6-Prettier-%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%B7%A5%E5%85%B7"><span class="nav-number">2.2.</span> <span class="nav-text">下載插件 Prettier - 格式化工具</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%82%BA%E4%BA%86%E4%BD%BF%E6%92%B0%E5%AF%AB%E7%A8%8B%E5%BC%8F%E6%9B%B4%E4%BE%BF%E6%8D%B7%EF%BC%8C%E5%8F%AF%E4%B8%8B%E8%BC%89-VS-Code-%E7%9A%84%E5%BB%B6%E4%BC%B8%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%A8%82%E8%A3%BD%E7%AC%A6%E5%90%88%E8%87%AA%E5%B7%B1%E4%BD%BF%E7%94%A8%E7%BF%92%E6%85%A3%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8%EF%BC%8C%E9%A6%96%E5%85%88%E5%8F%AF%E4%B8%8B%E8%BC%89-Prettier%EF%BC%8C%E6%AD%A4%E6%AC%BE%E6%8F%92%E4%BB%B6%E6%98%AF%E7%8F%BE%E8%A1%8C%E5%8F%AB%E6%B5%81%E8%A1%8C%E7%9A%84%E6%8F%92%E4%BB%B6%E5%B7%A5%E5%85%B7%EF%BC%8C%E5%8A%9F%E8%83%BD%E6%98%AF%E5%9C%A8%E4%BD%BF%E7%94%A8%E8%80%85%E5%84%B2%E5%AD%98%E7%A8%8B%E5%BC%8F%E7%A2%BC%E6%99%82%EF%BC%8C%E6%9C%83%E8%87%AA%E5%8B%95%E6%A0%BC%E5%BC%8F%E5%8C%96%EF%BC%88%E6%8E%92%E7%89%88%EF%BC%89%E7%A8%8B%E5%BC%8F%E7%A2%BC%EF%BC%8C%E4%BE%BF%E6%96%BC%E4%BD%BF%E7%94%A8%E8%80%85%E6%9B%B4%E5%AE%B9%E6%98%93%E6%89%BE%E5%87%BA%E7%A8%8B%E5%BC%8F%E7%A2%BC%E4%B8%AD%E7%9A%84%E4%BB%BB%E4%BD%95%E9%8C%AF%E8%AA%A4%EF%BC%8C%E5%85%B6%E5%AE%89%E8%A3%9D%E6%B5%81%E7%A8%8B%E5%A6%82%E4%B8%8B%E5%9C%96%E6%89%80%E7%A4%BA%EF%BC%9A"><span class="nav-number">2.2.1.</span> <span class="nav-text">為了使撰寫程式更便捷，可下載 VS Code 的延伸插件，訂製符合自己使用習慣的編輯器，首先可下載 Prettier，此款插件是現行叫流行的插件工具，功能是在使用者儲存程式碼時，會自動格式化（排版）程式碼，便於使用者更容易找出程式碼中的任何錯誤，其安裝流程如下圖所示：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A-Prettier-%E6%B5%81%E7%A8%8B%EF%BC%8C%E9%BB%9E%E9%81%B8%E5%B7%A6%E4%B8%8B%E8%A7%92%E9%BD%92%E8%BC%AA-%E9%BB%9E%E9%81%B8-Settings-%E6%90%9C%E5%B0%8B%E6%AC%84%E6%90%9C%E5%B0%8B-default-format-%E9%81%B8%E6%93%87-Prettier-Code-formatter%EF%BC%9A"><span class="nav-number">2.2.2.</span> <span class="nav-text">設定 Prettier 流程，點選左下角齒輪 -&gt; 點選 Settings -&gt; 搜尋欄搜尋 default format -&gt; 選擇 Prettier - Code formatter：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Editor%EF%BC%9AFormat-On-Save"><span class="nav-number">2.3.</span> <span class="nav-text">Editor：Format On Save</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%90%9C%E5%B0%8B%E6%AC%84%E6%90%9C%E5%B0%8B-Format-On-Save-%E4%B8%A6%E5%8B%BE%E9%81%B8%E5%85%B6%E9%81%B8%E9%A0%85%EF%BC%8C%E6%AD%A4%E8%A8%AD%E5%AE%9A%E4%B9%8B%E5%8A%9F%E8%83%BD%E8%A1%A8%E7%A4%BA%E5%84%B2%E5%AD%98%E6%99%82%E8%87%AA%E5%8B%95%E6%A0%BC%E5%BC%8F%E5%8C%96%EF%BC%8C%E5%A6%82%E4%B8%8B%E5%9C%96%E6%89%80%E7%A4%BA%EF%BC%9A"><span class="nav-number">2.3.1.</span> <span class="nav-text">使用搜尋欄搜尋 Format On Save 並勾選其選項，此設定之功能表示儲存時自動格式化，如下圖所示：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTML%EF%BC%9A-Auto-Closing-Tags"><span class="nav-number">2.4.</span> <span class="nav-text">HTML： Auto Closing Tags</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%90%9C%E5%B0%8B%E6%AC%84%E4%BD%8D%E6%90%9C%E5%B0%8B-Auto-Closing-Tags-%E4%B8%A6%E5%8B%BE%E9%81%B8-HTML%EF%BC%9AAuto-Closing-Tags-%E9%81%B8%E9%A0%85%EF%BC%8C%E6%AD%A4%E8%A8%AD%E5%AE%9A%E4%B9%8B%E5%8A%9F%E8%83%BD%E7%82%BA%E9%90%BA%E9%96%8B%E5%95%9F%E4%B8%80%E5%85%83%E7%B4%A0%E6%A8%99%E7%B1%A4%E5%BE%8C%EF%BC%8C%E6%9C%83%E8%87%AA%E5%8B%95%E8%A3%9C%E4%B8%8A%E7%B5%90%E6%9D%9F%E6%A8%99%E7%B1%A4%E3%80%82"><span class="nav-number">2.4.1.</span> <span class="nav-text">使用搜尋欄位搜尋 Auto Closing Tags 並勾選 HTML：Auto Closing Tags 選項，此設定之功能為鐺開啟一元素標籤後，會自動補上結束標籤。</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D-Live-Server"><span class="nav-number">2.5.</span> <span class="nav-text">安裝 Live Server</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%96%8B%E5%95%9F-Live-Server-%E5%BE%8C%EF%BC%8C%E5%9C%A8%E6%AF%8F%E6%AC%A1%E5%84%B2%E5%AD%98%E6%AA%94%E6%A1%88%E5%BE%8C%E6%9C%83%E5%B0%87%E4%BF%AE%E6%94%B9%E7%9A%84%E7%A8%8B%E5%BC%8F%E6%9B%B4%E6%96%B0%E5%9C%A8%E7%B6%B2%E9%A0%81%E4%B8%8A%EF%BC%8C%E4%BE%BF%E6%96%BC%E9%96%8B%E7%99%BC%E3%80%82"><span class="nav-number">2.5.1.</span> <span class="nav-text">開啟 Live Server 後，在每次儲存檔案後會將修改的程式更新在網頁上，便於開發。</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -323,7 +323,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>

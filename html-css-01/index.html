@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="什麼是 HTML HTML（ Hyper Text Markup Language ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 html 程式呈現為網站。   你的第一個網頁 已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 html 程式撰寫，第一支程式不外乎都是從最經典的 Hello World 開始：">
+  <meta name="description" content="什麼是 HTML HTML（ Hyper Text Markup Language ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 html 程式呈現為網站。   你的第一個網頁 已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 html 程式撰寫，第一支程式不外乎都是從最經典的 Hello World 開始： 於">
 <meta property="og:type" content="article">
 <meta property="og:title" content="html-css-01">
 <meta property="og:url" content="http://example.com/html-css-01/">
 <meta property="og:site_name" content="kay_wu Note">
-<meta property="og:description" content="什麼是 HTML HTML（ Hyper Text Markup Language ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 html 程式呈現為網站。   你的第一個網頁 已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 html 程式撰寫，第一支程式不外乎都是從最經典的 Hello World 開始：">
+<meta property="og:description" content="什麼是 HTML HTML（ Hyper Text Markup Language ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 html 程式呈現為網站。   你的第一個網頁 已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 html 程式撰寫，第一支程式不外乎都是從最經典的 Hello World 開始： 於">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://i.imgur.com/Vndo28Y.png">
 <meta property="og:image" content="https://i.imgur.com/0ZtsVQw.png">
 <meta property="og:image" content="https://i.imgur.com/ZFsFf75.png">
 <meta property="og:image" content="https://i.imgur.com/3olie4t.png">
 <meta property="article:published_time" content="2023-07-26T09:39:06.000Z">
-<meta property="article:modified_time" content="2023-07-26T09:39:22.165Z">
+<meta property="article:modified_time" content="2023-07-29T05:36:17.000Z">
 <meta property="article:author" content="kay_wu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.imgur.com/Vndo28Y.png">
@@ -184,10 +184,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2023-07-26 17:39:06 / 修改時間：17:39:22" itemprop="dateCreated datePublished" datetime="2023-07-26T17:39:06+08:00">2023-07-26</time>
+              <time title="創建時間：2023-07-26 17:39:06" itemprop="dateCreated datePublished" datetime="2023-07-26T17:39:06+08:00">2023-07-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-07-29 13:36:17" itemprop="dateModified" datetime="2023-07-29T13:36:17+08:00">2023-07-29</time>
+              </span>
 
           
 
@@ -200,56 +206,50 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="什麼是-HTML"><a href="#什麼是-HTML" class="headerlink" title="什麼是 HTML"></a>什麼是 HTML</h2><ul>
-<li><em><strong>HTML</strong></em>（ <em><strong>Hyper Text Markup Language</strong></em> ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 <em><strong>html</strong></em> 程式呈現為網站。</li>
+        <h3 id="什麼是-HTML"><a href="#什麼是-HTML" class="headerlink" title="什麼是 HTML"></a>什麼是 HTML</h3><ul>
+<li><h5 id="HTML（-Hyper-Text-Markup-Language-）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將-html-程式呈現為網站。"><a href="#HTML（-Hyper-Text-Markup-Language-）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將-html-程式呈現為網站。" class="headerlink" title="HTML（ Hyper Text Markup Language ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 html 程式呈現為網站。"></a><em><strong>HTML</strong></em>（ <em><strong>Hyper Text Markup Language</strong></em> ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 <em><strong>html</strong></em> 程式呈現為網站。</h5></li>
 <li></li>
 </ul>
-<h2 id="你的第一個網頁"><a href="#你的第一個網頁" class="headerlink" title="你的第一個網頁"></a>你的第一個網頁</h2><ul>
-<li><p>已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 <em><strong>html</strong></em> 程式撰寫，第一支程式不外乎都是從最經典的 <code>Hello World</code> 開始：</p>
-<ol>
-<li>於桌面新增一專案資料夾並以 <em><strong>VS Code</strong></em> 開啟</li>
-<li>在資料節內新增一檔案為 <em><strong>index.html</strong></em> 之檔案，記住副檔名須為 <em><strong>.html</strong></em> <span id="more"></span></li>
-<li>於程式碼撰寫區域輸入 <code>!</code> 後，按下 <code>Tab</code> 鍵或選取第一個選項，<em><strong>VS Code</strong></em> 將自動生成基本的網頁架構</li>
+<h3 id="你的第一個網頁"><a href="#你的第一個網頁" class="headerlink" title="你的第一個網頁"></a>你的第一個網頁</h3><ul>
+<li><h5 id="已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的-html-程式撰寫，第一支程式不外乎都是從最經典的-Hello-World-開始："><a href="#已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的-html-程式撰寫，第一支程式不外乎都是從最經典的-Hello-World-開始：" class="headerlink" title="已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 html 程式撰寫，第一支程式不外乎都是從最經典的 Hello World 開始："></a>已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 <em><strong>html</strong></em> 程式撰寫，第一支程式不外乎都是從最經典的 <code>Hello World</code> 開始：</h5><ol>
+<li><h6 id="於桌面新增一專案資料夾並以-VS-Code-開啟"><a href="#於桌面新增一專案資料夾並以-VS-Code-開啟" class="headerlink" title="於桌面新增一專案資料夾並以 VS Code 開啟"></a>於桌面新增一專案資料夾並以 <em><strong>VS Code</strong></em> 開啟</h6></li>
+<li><h6 id="在資料節內新增一檔案為-index-html-之檔案，記住副檔名須為-html"><a href="#在資料節內新增一檔案為-index-html-之檔案，記住副檔名須為-html" class="headerlink" title="在資料節內新增一檔案為 index.html 之檔案，記住副檔名須為 .html "></a>在資料節內新增一檔案為 <em><strong>index.html</strong></em> 之檔案，記住副檔名須為 <em><strong>.html</strong></em> <span id="more"></span></h6></li>
+<li><h6 id="於程式碼撰寫區域輸入-後，按下-Tab-鍵或選取第一個選項，VS-Code-將自動生成基本的網頁架構"><a href="#於程式碼撰寫區域輸入-後，按下-Tab-鍵或選取第一個選項，VS-Code-將自動生成基本的網頁架構" class="headerlink" title="於程式碼撰寫區域輸入 ! 後，按下 Tab 鍵或選取第一個選項，VS Code 將自動生成基本的網頁架構"></a>於程式碼撰寫區域輸入 <code>!</code> 後，按下 <code>Tab</code> 鍵或選取第一個選項，<em><strong>VS Code</strong></em> 將自動生成基本的網頁架構</h6></li>
 </ol>
-<p>流程如下圖所示：</p>
-</li>
+<h6 id="流程如下圖所示："><a href="#流程如下圖所示：" class="headerlink" title="流程如下圖所示："></a>流程如下圖所示：</h6></li>
 </ul>
 <p><img src="https://i.imgur.com/Vndo28Y.png" alt="image-20221216150152923"></p>
 <p><img src="https://i.imgur.com/0ZtsVQw.png" alt="image-20221216143039578"></p>
 <ul>
-<li><p>以下為第一支 <code>Hello World !</code> 的程式碼</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>My first webpage 此處可以更改網頁標題<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello World !<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>My name is Kay, and this is my first webpage :D<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<li><h5 id="以下為第一支-Hello-World-的程式碼"><a href="#以下為第一支-Hello-World-的程式碼" class="headerlink" title="以下為第一支 Hello World ! 的程式碼"></a>以下為第一支 <code>Hello World !</code> 的程式碼</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>My first webpage 此處可以更改網頁標題<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello World !<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>My name is Kay, and this is my first webpage :D<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>網頁呈現結果</p>
-</li>
+<li><h5 id="點擊編輯好的-html-file-後，會透過瀏覽器可以看到網頁的呈現結果，或者使用-live-server-將網頁打開也可以。"><a href="#點擊編輯好的-html-file-後，會透過瀏覽器可以看到網頁的呈現結果，或者使用-live-server-將網頁打開也可以。" class="headerlink" title="點擊編輯好的 .html file 後，會透過瀏覽器可以看到網頁的呈現結果，或者使用 live server 將網頁打開也可以。"></a>點擊編輯好的 .html file 後，會透過瀏覽器可以看到網頁的呈現結果，或者使用 live server 將網頁打開也可以。</h5></li>
 </ul>
 <img src="https://i.imgur.com/ZFsFf75.png" alt="image-20221216160658740" style="zoom:60%;" />
 
 <ul>
-<li><p>第一支程式使用之標籤介紹如下所示：</p>
-<ol>
-<li><code>&lt;!DOCTYPE html&gt;</code>  ：定義這個檔案是一個HTML5的文檔</li>
-<li><code>&lt;html&gt;</code>： HTML 的根元素</li>
-<li><code>&lt;head&gt;</code>：包含有關HTML的元信息</li>
-<li><code>&lt;meta&gt;</code>：<ul>
-<li><code>meta charset=UTF-8</code>：指定網頁所使用之編碼</li>
-<li><code>meta http-equiv=X-UA-Compatible</code>：設置IE兼容模式</li>
-<li><code>meta name=viewport</code>：手機行動版網頁螢幕資訊</li>
+<li><h5 id="第一支程式使用之標籤介紹如下所示："><a href="#第一支程式使用之標籤介紹如下所示：" class="headerlink" title="第一支程式使用之標籤介紹如下所示："></a>第一支程式使用之標籤介紹如下所示：</h5><ol>
+<li><h6 id="：定義這個檔案是一個HTML5的文檔"><a href="#：定義這個檔案是一個HTML5的文檔" class="headerlink" title="&lt;!DOCTYPE html&gt;  ：定義這個檔案是一個HTML5的文檔"></a><code>&lt;!DOCTYPE html&gt;</code>  ：定義這個檔案是一個HTML5的文檔</h6></li>
+<li><h6 id="：-HTML-的根元素"><a href="#：-HTML-的根元素" class="headerlink" title="&lt;html&gt;： HTML 的根元素"></a><code>&lt;html&gt;</code>： HTML 的根元素</h6></li>
+<li><h6 id="：包含有關HTML的元信息"><a href="#：包含有關HTML的元信息" class="headerlink" title="&lt;head&gt;：包含有關HTML的元信息"></a><code>&lt;head&gt;</code>：包含有關HTML的元信息</h6></li>
+<li><h6 id="："><a href="#：" class="headerlink" title="&lt;meta&gt;："></a><code>&lt;meta&gt;</code>：</h6><ul>
+<li><h6 id="meta-charset-UTF-8：指定網頁所使用之編碼"><a href="#meta-charset-UTF-8：指定網頁所使用之編碼" class="headerlink" title="meta charset=UTF-8：指定網頁所使用之編碼"></a><code>meta charset=UTF-8</code>：指定網頁所使用之編碼</h6></li>
+<li><h6 id="meta-http-equiv-X-UA-Compatible：設置IE兼容模式"><a href="#meta-http-equiv-X-UA-Compatible：設置IE兼容模式" class="headerlink" title="meta http-equiv=X-UA-Compatible：設置IE兼容模式"></a><code>meta http-equiv=X-UA-Compatible</code>：設置IE兼容模式</h6></li>
+<li><h6 id="meta-name-viewport：手機行動版網頁螢幕資訊"><a href="#meta-name-viewport：手機行動版網頁螢幕資訊" class="headerlink" title="meta name=viewport：手機行動版網頁螢幕資訊"></a><code>meta name=viewport</code>：手機行動版網頁螢幕資訊</h6></li>
 </ul>
 </li>
-<li><code>&lt;title&gt;</code>：定義HTML的標題（ 顯示在瀏覽器標題欄或頁面的選項中 ）</li>
-<li><code>&lt;body&gt;</code>：所有可見內容的容器，如：標題、段落、圖像、超連結、表格與列表等</li>
-<li><code>&lt;h1&gt;</code>：heading 1 標題</li>
-<li><code>&lt;p&gt;</code>：段落</li>
+<li><h6 id="：定義HTML的標題（-顯示在瀏覽器標題欄或頁面的選項中-）"><a href="#：定義HTML的標題（-顯示在瀏覽器標題欄或頁面的選項中-）" class="headerlink" title="&lt;title&gt;：定義HTML的標題（ 顯示在瀏覽器標題欄或頁面的選項中 ）"></a><code>&lt;title&gt;</code>：定義HTML的標題（ 顯示在瀏覽器標題欄或頁面的選項中 ）</h6></li>
+<li><h6 id="：所有可見內容的容器，如：標題、段落、圖像、超連結、表格與列表等"><a href="#：所有可見內容的容器，如：標題、段落、圖像、超連結、表格與列表等" class="headerlink" title="&lt;body&gt;：所有可見內容的容器，如：標題、段落、圖像、超連結、表格與列表等"></a><code>&lt;body&gt;</code>：所有可見內容的容器，如：標題、段落、圖像、超連結、表格與列表等</h6></li>
+<li><h6 id="：heading-1-標題"><a href="#：heading-1-標題" class="headerlink" title="&lt;h1&gt;：heading 1 標題"></a><code>&lt;h1&gt;</code>：heading 1 標題</h6></li>
+<li><h6 id="：段落"><a href="#：段落" class="headerlink" title="&lt;p&gt;：段落"></a><code>&lt;p&gt;</code>：段落</h6></li>
 </ol>
 </li>
-<li><p>元素之結構如下圖所示：</p>
-</li>
+<li><h5 id="元素之結構如下圖所示："><a href="#元素之結構如下圖所示：" class="headerlink" title="元素之結構如下圖所示："></a>元素之結構如下圖所示：</h5></li>
 </ul>
 <p><img src="https://i.imgur.com/3olie4t.png" alt="image-20221216190243792"></p>
 <h3 id="參考資料："><a href="#參考資料：" class="headerlink" title="參考資料："></a>參考資料：</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://www.w3schools.com/html/html_intro.asp" title="Title"> Introduction to HTML - W3Schools </a></li>
-<li><a target="_blank" rel="noopener" href="https://www.fooish.com/html/meta-tag.html" title="Title"> HTML <meta> 標籤(tag) - 設定網頁元資訊 - Fooish 程式技術 </a></li>
+<li><h5 id="Introduction-to-HTML-W3Schools"><a href="#Introduction-to-HTML-W3Schools" class="headerlink" title=" Introduction to HTML - W3Schools "></a><a target="_blank" rel="noopener" href="https://www.w3schools.com/html/html_intro.asp" title="Title"> Introduction to HTML - W3Schools </a></h5></li>
+<li><h5 id="HTML-標籤-tag-設定網頁元資訊-Fooish-程式技術"><a href="#HTML-標籤-tag-設定網頁元資訊-Fooish-程式技術" class="headerlink" title=" HTML  標籤(tag) - 設定網頁元資訊 - Fooish 程式技術 "></a><a target="_blank" rel="noopener" href="https://www.fooish.com/html/meta-tag.html" title="Title"> HTML <meta> 標籤(tag) - 設定網頁元資訊 - Fooish 程式技術 </a></h5></li>
 </ol>
 
     </div>
@@ -331,7 +331,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E9%BA%BC%E6%98%AF-HTML"><span class="nav-number">1.</span> <span class="nav-text">什麼是 HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%80%8B%E7%B6%B2%E9%A0%81"><span class="nav-number">2.</span> <span class="nav-text">你的第一個網頁</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">參考資料：</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E9%BA%BC%E6%98%AF-HTML"><span class="nav-number">1.</span> <span class="nav-text">什麼是 HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#HTML%EF%BC%88-Hyper-Text-Markup-Language-%EF%BC%89%E8%B6%85%E6%96%87%E6%9C%AC%E6%A8%99%E8%A8%98%E8%AA%9E%E8%A8%80%E6%98%AF%E9%96%8B%E7%99%BC%E4%BA%BA%E5%93%A1%E7%94%A8%E4%BE%86%E5%BB%BA%E6%A7%8B%E8%88%87%E6%8F%8F%E8%BF%B0%E7%B6%B2%E9%A0%81%E5%85%A7%E5%AE%B9%E7%9A%84%E6%A8%99%E8%A8%98%E8%AA%9E%E8%A8%80%EF%BC%8C%E7%94%B1%E4%B8%80%E7%B3%BB%E5%88%97%E6%A8%99%E7%B1%A4%E5%85%83%E7%B4%A0%E7%B5%84%E6%88%90%E3%80%82%E9%80%8F%E9%81%8E%E8%A8%AD%E8%A8%88%E7%B6%B2%E9%A0%81%E7%9A%84%E5%85%83%E7%B4%A0%E6%8E%92%E5%88%97%E7%B5%90%E6%A7%8B%EF%BC%8C%E4%B8%A6%E8%97%89%E7%94%B1%E7%80%8F%E8%A6%BD%E5%99%A8%E5%B0%87-html-%E7%A8%8B%E5%BC%8F%E5%91%88%E7%8F%BE%E7%82%BA%E7%B6%B2%E7%AB%99%E3%80%82"><span class="nav-number">1.0.1.</span> <span class="nav-text">HTML（ Hyper Text Markup Language ）超文本標記語言是開發人員用來建構與描述網頁內容的標記語言，由一系列標籤元素組成。透過設計網頁的元素排列結構，並藉由瀏覽器將 html 程式呈現為網站。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%80%8B%E7%B6%B2%E9%A0%81"><span class="nav-number">2.</span> <span class="nav-text">你的第一個網頁</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B7%B2%E5%B0%87%E9%96%8B%E7%99%BC%E4%B9%8B%E7%B7%A8%E8%BC%AF%E5%99%A8%E5%AE%89%E8%A3%9D%E4%B8%A6%E9%85%8D%E7%BD%AE%E5%AE%8C%E7%95%A2%E5%BE%8C%EF%BC%8C%E6%8E%A5%E8%91%97%E9%80%B2%E8%A1%8C%E7%AC%AC%E4%B8%80%E5%80%8B%E7%B6%B2%E9%A0%81%E7%9A%84-html-%E7%A8%8B%E5%BC%8F%E6%92%B0%E5%AF%AB%EF%BC%8C%E7%AC%AC%E4%B8%80%E6%94%AF%E7%A8%8B%E5%BC%8F%E4%B8%8D%E5%A4%96%E4%B9%8E%E9%83%BD%E6%98%AF%E5%BE%9E%E6%9C%80%E7%B6%93%E5%85%B8%E7%9A%84-Hello-World-%E9%96%8B%E5%A7%8B%EF%BC%9A"><span class="nav-number">2.0.1.</span> <span class="nav-text">已將開發之編輯器安裝並配置完畢後，接著進行第一個網頁的 html 程式撰寫，第一支程式不外乎都是從最經典的 Hello World 開始：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%96%BC%E6%A1%8C%E9%9D%A2%E6%96%B0%E5%A2%9E%E4%B8%80%E5%B0%88%E6%A1%88%E8%B3%87%E6%96%99%E5%A4%BE%E4%B8%A6%E4%BB%A5-VS-Code-%E9%96%8B%E5%95%9F"><span class="nav-number">2.0.1.1.</span> <span class="nav-text">於桌面新增一專案資料夾並以 VS Code 開啟</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%9C%A8%E8%B3%87%E6%96%99%E7%AF%80%E5%85%A7%E6%96%B0%E5%A2%9E%E4%B8%80%E6%AA%94%E6%A1%88%E7%82%BA-index-html-%E4%B9%8B%E6%AA%94%E6%A1%88%EF%BC%8C%E8%A8%98%E4%BD%8F%E5%89%AF%E6%AA%94%E5%90%8D%E9%A0%88%E7%82%BA-html"><span class="nav-number">2.0.1.2.</span> <span class="nav-text">在資料節內新增一檔案為 index.html 之檔案，記住副檔名須為 .html </span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%96%BC%E7%A8%8B%E5%BC%8F%E7%A2%BC%E6%92%B0%E5%AF%AB%E5%8D%80%E5%9F%9F%E8%BC%B8%E5%85%A5-%E5%BE%8C%EF%BC%8C%E6%8C%89%E4%B8%8B-Tab-%E9%8D%B5%E6%88%96%E9%81%B8%E5%8F%96%E7%AC%AC%E4%B8%80%E5%80%8B%E9%81%B8%E9%A0%85%EF%BC%8CVS-Code-%E5%B0%87%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E5%9F%BA%E6%9C%AC%E7%9A%84%E7%B6%B2%E9%A0%81%E6%9E%B6%E6%A7%8B"><span class="nav-number">2.0.1.3.</span> <span class="nav-text">於程式碼撰寫區域輸入 ! 後，按下 Tab 鍵或選取第一個選項，VS Code 將自動生成基本的網頁架構</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B%E5%A6%82%E4%B8%8B%E5%9C%96%E6%89%80%E7%A4%BA%EF%BC%9A"><span class="nav-number">2.0.1.4.</span> <span class="nav-text">流程如下圖所示：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BB%A5%E4%B8%8B%E7%82%BA%E7%AC%AC%E4%B8%80%E6%94%AF-Hello-World-%E7%9A%84%E7%A8%8B%E5%BC%8F%E7%A2%BC"><span class="nav-number">2.0.2.</span> <span class="nav-text">以下為第一支 Hello World ! 的程式碼</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%BB%9E%E6%93%8A%E7%B7%A8%E8%BC%AF%E5%A5%BD%E7%9A%84-html-file-%E5%BE%8C%EF%BC%8C%E6%9C%83%E9%80%8F%E9%81%8E%E7%80%8F%E8%A6%BD%E5%99%A8%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E7%B6%B2%E9%A0%81%E7%9A%84%E5%91%88%E7%8F%BE%E7%B5%90%E6%9E%9C%EF%BC%8C%E6%88%96%E8%80%85%E4%BD%BF%E7%94%A8-live-server-%E5%B0%87%E7%B6%B2%E9%A0%81%E6%89%93%E9%96%8B%E4%B9%9F%E5%8F%AF%E4%BB%A5%E3%80%82"><span class="nav-number">2.0.3.</span> <span class="nav-text">點擊編輯好的 .html file 後，會透過瀏覽器可以看到網頁的呈現結果，或者使用 live server 將網頁打開也可以。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%94%AF%E7%A8%8B%E5%BC%8F%E4%BD%BF%E7%94%A8%E4%B9%8B%E6%A8%99%E7%B1%A4%E4%BB%8B%E7%B4%B9%E5%A6%82%E4%B8%8B%E6%89%80%E7%A4%BA%EF%BC%9A"><span class="nav-number">2.0.4.</span> <span class="nav-text">第一支程式使用之標籤介紹如下所示：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%EF%BC%9A%E5%AE%9A%E7%BE%A9%E9%80%99%E5%80%8B%E6%AA%94%E6%A1%88%E6%98%AF%E4%B8%80%E5%80%8BHTML5%E7%9A%84%E6%96%87%E6%AA%94"><span class="nav-number">2.0.4.1.</span> <span class="nav-text">&lt;!DOCTYPE html&gt;  ：定義這個檔案是一個HTML5的文檔</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%EF%BC%9A-HTML-%E7%9A%84%E6%A0%B9%E5%85%83%E7%B4%A0"><span class="nav-number">2.0.4.2.</span> <span class="nav-text">&lt;html&gt;： HTML 的根元素</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%EF%BC%9A%E5%8C%85%E5%90%AB%E6%9C%89%E9%97%9CHTML%E7%9A%84%E5%85%83%E4%BF%A1%E6%81%AF"><span class="nav-number">2.0.4.3.</span> <span class="nav-text">&lt;head&gt;：包含有關HTML的元信息</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%EF%BC%9A"><span class="nav-number">2.0.4.4.</span> <span class="nav-text">&lt;meta&gt;：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#meta-charset-UTF-8%EF%BC%9A%E6%8C%87%E5%AE%9A%E7%B6%B2%E9%A0%81%E6%89%80%E4%BD%BF%E7%94%A8%E4%B9%8B%E7%B7%A8%E7%A2%BC"><span class="nav-number">2.0.4.5.</span> <span class="nav-text">meta charset&#x3D;UTF-8：指定網頁所使用之編碼</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#meta-http-equiv-X-UA-Compatible%EF%BC%9A%E8%A8%AD%E7%BD%AEIE%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.0.4.6.</span> <span class="nav-text">meta http-equiv&#x3D;X-UA-Compatible：設置IE兼容模式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#meta-name-viewport%EF%BC%9A%E6%89%8B%E6%A9%9F%E8%A1%8C%E5%8B%95%E7%89%88%E7%B6%B2%E9%A0%81%E8%9E%A2%E5%B9%95%E8%B3%87%E8%A8%8A"><span class="nav-number">2.0.4.7.</span> <span class="nav-text">meta name&#x3D;viewport：手機行動版網頁螢幕資訊</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%EF%BC%9A%E5%AE%9A%E7%BE%A9HTML%E7%9A%84%E6%A8%99%E9%A1%8C%EF%BC%88-%E9%A1%AF%E7%A4%BA%E5%9C%A8%E7%80%8F%E8%A6%BD%E5%99%A8%E6%A8%99%E9%A1%8C%E6%AC%84%E6%88%96%E9%A0%81%E9%9D%A2%E7%9A%84%E9%81%B8%E9%A0%85%E4%B8%AD-%EF%BC%89"><span class="nav-number">2.0.4.8.</span> <span class="nav-text">&lt;title&gt;：定義HTML的標題（ 顯示在瀏覽器標題欄或頁面的選項中 ）</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%EF%BC%9A%E6%89%80%E6%9C%89%E5%8F%AF%E8%A6%8B%E5%85%A7%E5%AE%B9%E7%9A%84%E5%AE%B9%E5%99%A8%EF%BC%8C%E5%A6%82%EF%BC%9A%E6%A8%99%E9%A1%8C%E3%80%81%E6%AE%B5%E8%90%BD%E3%80%81%E5%9C%96%E5%83%8F%E3%80%81%E8%B6%85%E9%80%A3%E7%B5%90%E3%80%81%E8%A1%A8%E6%A0%BC%E8%88%87%E5%88%97%E8%A1%A8%E7%AD%89"><span class="nav-number">2.0.4.9.</span> <span class="nav-text">&lt;body&gt;：所有可見內容的容器，如：標題、段落、圖像、超連結、表格與列表等</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%EF%BC%9Aheading-1-%E6%A8%99%E9%A1%8C"><span class="nav-number">2.0.4.10.</span> <span class="nav-text">&lt;h1&gt;：heading 1 標題</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%EF%BC%9A%E6%AE%B5%E8%90%BD"><span class="nav-number">2.0.4.11.</span> <span class="nav-text">&lt;p&gt;：段落</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E4%B9%8B%E7%B5%90%E6%A7%8B%E5%A6%82%E4%B8%8B%E5%9C%96%E6%89%80%E7%A4%BA%EF%BC%9A"><span class="nav-number">2.0.5.</span> <span class="nav-text">元素之結構如下圖所示：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">參考資料：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Introduction-to-HTML-W3Schools"><span class="nav-number">3.0.1.</span> <span class="nav-text"> Introduction to HTML - W3Schools </span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#HTML-%E6%A8%99%E7%B1%A4-tag-%E8%A8%AD%E5%AE%9A%E7%B6%B2%E9%A0%81%E5%85%83%E8%B3%87%E8%A8%8A-Fooish-%E7%A8%8B%E5%BC%8F%E6%8A%80%E8%A1%93"><span class="nav-number">3.0.2.</span> <span class="nav-text"> HTML  標籤(tag) - 設定網頁元資訊 - Fooish 程式技術 </span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -344,7 +344,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
